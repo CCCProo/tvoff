@@ -40,7 +40,7 @@ body header {
 	background-color: #353b39;
   box-shadow: 0 4px 6px rgba(0,0,0,.2); 
   top: 0;
-  height: 100px;
+  height: 80px;
   position: fixed;
   width: 100%; 
 }
