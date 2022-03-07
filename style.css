@@ -126,7 +126,7 @@ ul li a:hover::before{
 }
 
 .first {
-	height: 500px + 100%;
+	max-height: 500px;
 	width:100%;
 	background-image: url(logo.bmp);
 	background-size: cover;
