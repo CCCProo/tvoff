@@ -19,7 +19,7 @@
 }
 .amogus2{
 				background-color: #efdecd;
-				height: 640px;
+				height: 100%;
 				justify-content: center;
 				text-align: center;
 				width: 840px;
@@ -126,7 +126,8 @@ ul li a:hover::before{
 }
 
 .first {
-	max-height: 500px;
+	max-height: 400px;
+	padding-top: 400px;
 	width:100%;
 	background-image: url(logo.bmp);
 	background-size: cover;
