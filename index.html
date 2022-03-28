@@ -1,1074 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  <link href="light-theme.css" rel="stylesheet" id="theme-link">
+<head>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" media="all" href="animate.css">
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Pacifico&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" type="text/css" href="media.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
- 
-
-
-	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>FNAF</title>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 	<style type="text/css">
-		@media screen and (max-width: 445px){
-		
-.foto31{
+		@media screen and (max-width: 850px) {
+			.border{
+	padding: 11px;
+	background: #eaeaea;
+	border-radius: 30px;
+	border: 2px solid black;
+
+}			
+		}
+		@media screen and (max-width: 1100px) {
+			.container .freddy{
 	
-	border-radius: 60px;
-	margin-left: 50px;
+	width: 180.4px;
+	top: 40px;
 }
-#gl{
-	margin-left: -40px;
-	margin-top: -50px;
-	position: absolute;
-}
+		}
 
-#kon{
-	margin-left: 30px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-#pod{
-	margin-left: 110px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-			header {
-	background-color: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,.2); 
-  top: 0;
-  height: 80px;
-  position: fixed;
-  width: 100%; 
-}
-nav {
-  max-width: 660px;
-  padding: 20px 0;
-  overflow: hidden;
-}
-
-.logo {
-  margin: 0;
-  height: 50px;
-  top: 0;
-  margin-left: 10px;
-  margin-top: 10px;
-  position: absolute;
-}
-ul {
-  margin: 0;
-  margin-right: 25px;
-  padding-left: 0;
-  float: right;
-  height: 70px;
-  line-height: 70px;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-}
-ul li{
-	position: relative;
-
-}
-li a {
-  color: #868686;
-  	color: transparent;
-	-webkit-text-stroke:1px red;
-	font-size: 14px;
-	position:relative; ;
-	left: 0;
-
+		@media screen and (max-width: 980px) {
+			.container .freddy{
 	
+	width: 160.4px;
+	top: 60px;
 }
-li {
-  display: inline-block;
-  margin-left: 4px;
-  transition: .5s linear;
-}
-ul li a::before{
-	opacity: 0.4;
-	content: attr(data-text);
-	position: absolute;
-	color: black;
-	width: 0;
-	overflow: hidden;
-	transition: 1s;
-	border-right: 5px solid white;
-	height: 100%;
-
-}
-ul li a:hover::before{
-	opacity: 1;
-	width: 100%;
-	-webkit-text-stroke:0.8px blue;
-	text-shadow: 2px 2px 2px red;
-}
-
-.logo1{
-	width: 70px;
-}
-
-label{
-	width: 50px;
-	height: 20px;
+		}
+	@media screen and (max-width: 670px) {
+			.container .freddy{
 	
-	margin-left: -100px;
-	cursor: pointer;	margin-top: -5px;
-
+	width: 120.4px;
+	top: 100px;
 }
-label input{
-	position: relative;
-	z-index: 1;
-	text-decoration: none;
-	display: none;
-}
-label span{
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 100%;
-	border-radius: 80px;
-	height: 100%;
-	background-color: black;
-	box-shadow: 0 5px 25px black;
-		border: 5px solid white;
+		}
 
-
-}
-
-label input:checked ~ span{
-	background-color: black;
-	box-shadow: 0 5px 25px black;
-	border: 5px solid white;
-}
-
-label span i{
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	width: 10px;
-	height: 10px;background-color: white;
-	border-radius: 50%;
-	transition: 1s;
-
-}
-
-
-
-label span i ion-icon{
-	font-size: 5px;
-	text-align: center;
-	justify-content: center;
-	margin-top: 3px;
-	position: absolute;
-	margin-left: -6px;
-	opacity: 0;
-}
-
-label input:checked ~ span i ion-icon{
-	color: black;
-}
-
- label input:checked ~ span{
-	background-color: white;
-	box-shadow: 0 15px 25px white;
-	border: 5px solid black;
-}
-
- label input:checked ~ span i{
-	left: 37px;
-
-
-}
-
-
-label input:checked ~ span i ion-icon{
-color:white;
-
+			@media screen and (max-width: 570px) {
+			.container .freddy{
 	
+	width: 115.4px;
+	top: 110px;
+}				
 
-}
-			
-
-
-			.amogus{
-				background-color: #efdecd;
-				height: 770px;
-				width: 280px;
-				position: relative;
-				left: 0;
-				margin-left: 20px;
-				margin-top: 100px;
-				border-radius: 30px;
-				border: 4px solid black;
-				padding: 20px;
-
-
-}
-.amogus2{
-				background-color: #efdecd;
-				height: 110%;
-				justify-content: center;
-				text-align: center;
-				width: 77%;
-				position: relative;
-				left: 0;
-				margin-left: 20px;
-				margin-top: 100px;
-				border-radius: 30px;
-				border: 4px solid black;
-				padding: 20px;
-}
-.fotodiv1{
-	background-color: white;
-	width: 88%;
-	height: 100%;
-	position:relative;
-	border-radius: 20px;
-	text-align: center;
-	border:2px solid black;
-	padding-bottom: 20px;
-	margin-left: 4%;
-	margin-top: 80%;
-padding-bottom: 20px;
-
-}
-
-.fotodiv{
-	background-color: white;
-	width: 77%;
-	position:absolute;
-	border:3px solid black;
-	border-radius: 20px;
-	justify-content: center;
-	text-align: center;
-	margin-left: -4px;
-}
-.first {
-	max-height: 100px;
-	width:100%;
-	background-image: url(logo.bmp);
-	background-size: cover;
-	background-position: center;
-	margin-top: 70px;
+@media screen and (max-width: 500px) {
+			.container4 .freddy{
 	
+	width: 90.4px;
+	top: 110px;
 }
+		}
 
-ul li a::before{
-	opacity: 0.4;
-	content: attr(data-text);
-	position: absolute;
-	color: white;
-	width: 0;
-	overflow: hidden;
-	transition: 1s;
-	border-right: 5px solid white;
-	height: 80%;
 
-}
-ul li a:hover::before{
-	opacity: 1;
-	width: 100%;
-	-webkit-text-stroke:0.8px blue;
-	text-shadow: 2px 2px 2px red;
-}
-
-.gav{border-radius: 300px; width: 180px; margin-left: 45px;}
-.circle{
-	position: absolute;
-	width: 190px;
-	height: 190px;
-	margin-left: 36px;
-	margin-top: -8px;
-	
-
-}
-.first-line1{
-	position: absolute;
-
-}
-}
-
-@media screen and (width: 810px) {
-		.foto31{
-	
-	border-radius: 60px;
-	margin-left: 100px;
-}
-#gl{
-	margin-left: -40px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-#kon{
-	margin-left: 90px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-#pod{
-	margin-left: 240px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-			header {
-	background-color: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,.2); 
-  top: 0;
-  height: 80px;
-  position: fixed;
-  width: 100%; 
-}
-nav {
-  max-width: 660px;
-  padding: 20px 0;
-  overflow: hidden;
-}
-
-.logo {
-  margin: 0;
-  height: 50px;
-  top: 0;
-  margin-left: 10px;
-  margin-top: 10px;
-  position: absolute;
-}
-ul {
-  margin: 0;
-  margin-right: 25px;
-  padding-left: 0;
-  float: right;
-  height: 70px;
-  line-height: 70px;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-}
-ul li{
-	position: relative;
-
-}
-li a {
-  color: #868686;
-  	color: transparent;
-	-webkit-text-stroke:1px red;
-	font-size: 206x;
-	position:relative; ;
-	left: 0;
-
-	
-}
-li {
-  display: inline-block;
-  margin-left: 4px;
-  transition: .5s linear;
-}
-ul li a::before{
-	opacity: 0.4;
-	content: attr(data-text);
-	position: absolute;
-	color: black;
-	width: 0;
-	overflow: hidden;
-	transition: 1s;
-	border-right: 5px solid white;
-	height: 100%;
-
-}
-ul li a:hover::before{
-	opacity: 1;
-	width: 100%;
-	-webkit-text-stroke:0.8px blue;
-	text-shadow: 2px 2px 2px red;
-}
-
-.logo1{
-	width: 70px;
-}
-
-		
-
-
-			.amogus{
-				background-color: #efdecd;
-				height: 530px;
-				width: 720px;
-				position: relative;
-				left: 0;
-				margin-left: 20px;
-				margin-top: 100px;
-				border-radius: 30px;
-				border: 4px solid black;
-				padding: 20px;
-
-
-}
-.amogus2{
-				background-color: #efdecd;
-				height: 630px;
-				justify-content: center;
-				text-align: center;
-				width: 720px;
-				position: relative;
-				left: 0;
-				margin-left: 20px;
-				margin-top: 100px;
-				border-radius: 30px;
-				border: 4px solid black;
-				padding: 20px;
-}
-.fotodiv1{
-	background-color: white;
-	width: 88%;
-	position:relative;
-	border-radius: 20px;
-	text-align: center;
-	border:2px solid black;
-	margin-top: 200px;
-	margin-left: 46px;
-	padding-bottom: 50px;
-
-}
-
-.fotodiv{
-	background-color: white;
-	width: 77%;
-	position:absolute;
-	border:3px solid black;
-	padding: 20px;
-	border-radius: 20px;
-	justify-content: center;
-	text-align: center;
-	margin-left: 46px;
-}
-.first {
-	height: 100%;
-	width:100%;
-	background-image: url(logo.bmp);
-	background-size: cover;
-	background-position: center;
-	margin-top: 70px;
-	
-}
-
-ul li a::before{
-	opacity: 0.4;
-	content: attr(data-text);
-	position: absolute;
-	color: white;
-	width: 0;
-	overflow: hidden;
-	transition: 1s;
-	border-right: 5px solid white;
-	height: 80%;
-
-}
-ul li a:hover::before{
-	opacity: 1;
-	width: 100%;
-	-webkit-text-stroke:0.8px blue;
-	text-shadow: 2px 2px 2px red;
-}
-
-.gav{border-radius: 300px; width: 180px; margin-left: 195px;}
-.circle{
-	position: absolute;
-	width: 190px;
-	height: 190px;
-	margin-left: 190px;
-	margin-top: -5px;
-	
-
-}
-}
-
-@media screen and (width: 906px) {
-		.foto31{
-	
-	border-radius: 60px;
-	margin-left: 100px;
-}
-#gl{
-	margin-left: -40px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-#kon{
-	margin-left: 90px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-#pod{
-	margin-left: 240px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-			header {
-	background-color: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,.2); 
-  top: 0;
-  height: 80px;
-  position: fixed;
-  width: 100%; 
-}
-nav {
-  max-width: 660px;
-  padding: 20px 0;
-  overflow: hidden;
-}
-
-.logo {
-  margin: 0;
-  height: 50px;
-  top: 0;
-  margin-left: 10px;
-  margin-top: 10px;
-  position: absolute;
-}
-ul {
-  margin: 0;
-  margin-right: 25px;
-  padding-left: 0;
-  float: right;
-  height: 70px;
-  line-height: 70px;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-}
-ul li{
-	position: relative;
-
-}
-li a {
-  color: #868686;
-  	color: transparent;
-	-webkit-text-stroke:1px red;
-	font-size: 206x;
-	position:relative; ;
-	left: 0;
-
-	
-}
-li {
-  display: inline-block;
-  margin-left: 4px;
-  transition: .5s linear;
-}
-ul li a::before{
-	opacity: 0.4;
-	content: attr(data-text);
-	position: absolute;
-	color: black;
-	width: 0;
-	overflow: hidden;
-	transition: 1s;
-	border-right: 5px solid white;
-	height: 100%;
-
-}
-ul li a:hover::before{
-	opacity: 1;
-	width: 100%;
-	-webkit-text-stroke:0.8px blue;
-	text-shadow: 2px 2px 2px red;
-}
-
-.logo1{
-	width: 70px;
-}
-
-		
-
-
-			.amogus{
-				background-color: #efdecd;
-				height: 530px;
-				width: 720px;
-				position: relative;
-				left: 0;
-				margin-left: 20px;
-				margin-top: 100px;
-				border-radius: 30px;
-				border: 4px solid black;
-				padding: 20px;
-
-
-}
-.amogus2{
-				background-color: #efdecd;
-				height: 100%;
-				justify-content: center;
-				text-align: center;
-				width: 720px;
-				position: relative;
-				left: 0;
-				margin-left: 20px;
-				margin-top: 100px;
-				border-radius: 30px;
-				border: 4px solid black;
-				padding: 20px;
-}
-.fotodiv1{
-	background-color: white;
-	width: 88%;
-	position:relative;
-	border-radius: 20px;
-	text-align: center;
-	border:2px solid black;
-	margin-top: 200px;
-	margin-left: 46px;
-	margin-top: 289px;
-padding-bottom: 20px;
-}
-
-.fotodiv{
-	background-color: white;
-	width: 77%;
-	position:absolute;
-	border:3px solid black;
-	padding: 20px;
-	border-radius: 20px;
-	justify-content: center;
-	text-align: center;
-	margin-left: 46px;
-}
-.first {
-	max-height: 100px;
-	width:100%;
-	background-image: url(logo.bmp);
-	background-size: cover;
-	background-position: center;
-	margin-top: 70px;
-	
-}
-
-ul li a::before{
-	opacity: 0.4;
-	content: attr(data-text);
-	position: absolute;
-	color: white;
-	width: 0;
-	overflow: hidden;
-	transition: 1s;
-	border-right: 5px solid white;
-	height: 80%;
-
-}
-ul li a:hover::before{
-	opacity: 1;
-	width: 100%;
-	-webkit-text-stroke:0.8px blue;
-	text-shadow: 2px 2px 2px red;
-}
-
-.gav{border-radius: 300px; width: 180px; margin-left: 195px;}
-.circle{
-	position: absolute;
-	width: 190px;
-	height: 190px;
-	margin-left: 190px;
-	margin-top: -5px;
-	
-
-}
-.first-line1{
-	position: absolute;
-
-}
-}
-@media screen and (max-width: 360px) {
-		.foto31{
-	
-	border-radius: 60px;
-	margin-left: 50px;
-}
-#gl{
-	margin-left: -40px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-#kon{
-	margin-left: 20px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-#pod{
-	margin-left: 95px;
-	margin-top: -50px;
-	position: absolute;
-}
-
-			header {
-	background-color: white;
-  box-shadow: 0 4px 6px rgba(0,0,0,.2); 
-  top: 0;
-  height: 80px;
-  position: fixed;
-  width: 100%; 
-}
-nav {
-  max-width: 660px;
-  padding: 20px 0;
-  overflow: hidden;
-}
-
-.logo {
-  margin: 0;
-  height: 50px;
-  top: 0;
-  margin-left: 10px;
-  margin-top: 10px;
-  position: absolute;
-}
-ul {
-  margin: 0;
-  margin-right: 25px;
-  padding-left: 0;
-  float: right;
-  height: 70px;
-  line-height: 70px;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-}
-ul li{
-	position: relative;
-
-}
-li a {
-  color: #868686;
-  	color: transparent;
-	-webkit-text-stroke:1px red;
-	font-size: 14px;
-	position:relative; ;
-	left: 0;
-
-	
-}
-li {
-  display: inline-block;
-  margin-left: 4px;
-  transition: .5s linear;
-}
-ul li a::before{
-	opacity: 0.4;
-	content: attr(data-text);
-	position: absolute;
-	color: black;
-	width: 0;
-	overflow: hidden;
-	transition: 1s;
-	border-right: 5px solid white;
-	height: 100%;
-
-}
-ul li a:hover::before{
-	opacity: 1;
-	width: 100%;
-	-webkit-text-stroke:0.8px blue;
-	text-shadow: 2px 2px 2px red;
-}
-
-.logo1{
-	width: 70px;
-}
-
-label{
-	width: 50px;
-	height: 20px;
-	
-	margin-left: -100px;
-	cursor: pointer;	margin-top: -5px;
-
-}
-label input{
-	position: relative;
-	z-index: 1;
-	text-decoration: none;
-	display: none;
-}
-label span{
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 100%;
-	border-radius: 80px;
-	height: 100%;
-	background-color: black;
-	box-shadow: 0 5px 25px black;
-		border: 5px solid white;
 
 
-}
-
-label input:checked ~ span{
-	background-color: black;
-	box-shadow: 0 5px 25px black;
-	border: 5px solid white;
-}
-
-label span i{
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	width: 10px;
-	height: 10px;background-color: white;
-	border-radius: 50%;
-	transition: 1s;
-
-}
-
-
-
-label span i ion-icon{
-	font-size: 5px;
-	text-align: center;
-	justify-content: center;
-	margin-top: 3px;
-	position: absolute;
-	margin-left: -6px;
-	opacity: 0;
-}
-
-label input:checked ~ span i ion-icon{
-	color: black;
-}
-
- label input:checked ~ span{
-	background-color: white;
-	box-shadow: 0 15px 25px white;
-	border: 5px solid black;
-}
-
- label input:checked ~ span i{
-	left: 37px;
-
-
-}
-
-
-label input:checked ~ span i ion-icon{
-color:white;
-
-	
-
-}
-			
-
-
-			.amogus{
-				background-color: #efdecd;
-				height: 770px;
-				width: 280px;
-				position: relative;
-				left: 0;
-				margin-left: 20px;
-				margin-top: 100px;
-				border-radius: 30px;
-				border: 4px solid black;
-				padding: 20px;
-
-
-}
-.amogus2{
-				background-color: #efdecd;
-				height: 100%;
-				justify-content: center;
-				text-align: center;
-				width: 280px;
-				position: relative;
-				left: 0;
-				margin-left: 20px;
-				margin-top: 100px;
-				border-radius: 30px;
-				border: 4px solid black;
-				padding: 20px;
-}
-.fotodiv1{
-	background-color: white;
-	width: 94%;
-	position:relative;
-	padding: 10px;
-	border-radius: 20px;
-	text-align: center;
-	border:2px solid black;
-	margin-top: 200px;
-	padding-bottom: 50px;
-}
-
-.fotodiv{
-	background-color: white;
-	width: 77%;
-	position:absolute;
-	border:3px solid black;
-	padding: 20px;
-	border-radius: 20px;
-	justify-content: center;
-	text-align: center;
-	margin-left: -4px;
-}
-.first {
-	max-height: 100px;
-	width:100%;
-	background-image: url(logo.bmp);
-	background-size: cover;
-	background-position: center;
-	margin-top: 70px;
-	
-}
-
-ul li a::before{
-	opacity: 0.4;
-	content: attr(data-text);
-	position: absolute;
-	color: white;
-	width: 0;
-	overflow: hidden;
-	transition: 1s;
-	border-right: 5px solid white;
-	height: 80%;
-
-}
-ul li a:hover::before{
-	opacity: 1;
-	width: 100%;
-	-webkit-text-stroke:0.8px blue;
-	text-shadow: 2px 2px 2px red;
-}
-
-.gav{border-radius: 300px; width: 180px; margin-left: 45px;}
-.circle{
-	position: absolute;
-	width: 190px;
-	height: 190px;
-	margin-left: 36px;
-	margin-top: -8px;
-	
-}
-.first-line1{
-	position: absolute;
-
-}
-}
 
 
 	</style>
-	<main>
-		
-
-
- <!--<!-->
- <div>
-  <div class="container first" style="">
-				
-				</div>
-			</div>
+<!-- Шапка <!-->
+	<header>
+	</header>
+	<!-- Меню <!-->
+	<div class="navigator">
+		<ul>
+			<li class="list active">
+				<a href="index.html">
+					<span class="icon1"><ion-icon name="home-outline"></ion-icon></span>
+					<span class="text">Главная</span>
+				</a>
+			</li>
 			
 			
-    <div class="amogus2">
-    	<h1>Победитель<br> по конкурсу а фнаф 9 или на любую игру</h1><br><div class="fotodiv"><p class="text2">Руслан Нургамутдинов </p><img class="gav" src="logox.png"></div><br><div class="fotodiv1"><p class="text2">Выбрал игру:Super Bunny Man</p><img  style="padding-bottom: 20px;" class="foto31" src="super.png"></div>
-    </div>
+			<li class="list">
+				<a href="dowloandfnaf.html">
+					<span class="icon"><ion-icon name="cloud-download-outline"></ion-icon></span>
+					<span class="text2">Скачать</span>
+				</a>
+			</li>
+			<div class="indicator"></div>
+		</ul>
 	
-		<div class="amogus">
-			<p class="pclass">Конкурс на фнаф 9 или на любую игру за 80 кодди коинов</p><div  style="border-radius: 20px;" id="vk_post_-208709693_41"></div>
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
-<script type="text/javascript">
-  (function() {
-    VK.Widgets.Post("vk_post_-208709693_41", -208709693, 41, 'n_jn5ddbPTJngDgNyB97v9ndCvBo',);
-  }());
-</script>
-		<br></div>
-		
- 
 </div>
 
-
-	</main>   
-
-<br><br></var>
-   <script type="text/javascript">
-
-   </script><br><br>
-	<section class="sec">
-		<div class="dot"></div>
-	</section>
-	<header>
-  <nav>
-    <div class="logo-box">
-      <h1 class="logo">
-        <a href="">
-          <img class="logo1" src="img1.jpg" width="100px;" style="border-radius: 100px; ">
-        </a>
-      </h1>
-    </div>
-    <span><div style="margin-left: 100px; position: absolute; display: flex; "><ul class="ul">
-     <li>
-     	<a href="index.html" data-text="Главная" id="gl">Главная</a>
-     </li>
-     <li>
-     	<a href="konkyrs.html" data-text="Конкурсы" id="kon">Конкурсы</a>
-     </li>
-     <li>
-     	<a href="" data-text="Поддержка" id="pod">Поддержка</a>
-     </li>
-
-   </ul><li>
-   	
-   </li>
-
- </div></span> 
+<!-- контайнер 1 <!-->
+<div class="container">
+	<img src="freddy.jpg" class="freddy">
+	<p>FREDDY</p>
+	<div class="infa"><p><br><li>Внешность: Светло-коричневый медведь-аниматроник; носит черные галстук-бабочку и цилиндр; в правой руке держит микрофон. Мы уверены, Фредди придумает оригинальный способ убийства с помощью микрофона. Увеличив его морду, можно разглядеть отпечаток пятерни над его правым глазом и еще одну отметину (возможно, это тоже отпечаток ладони) на нижней части его челюсти.</li><br><li>Перемещения: Концертная сцена → Обеденный зал → Туалеты → Кухня → В. коридор →Угол В. коридора → Офис.</li><br><li>На свету его глаза изменяют цвет: они синие, когда вы видите его в коридоре за дверью, но иногда, во время скримеров, они могут быть черными.</li><br><li>Если вы смотрите на Фредди через камеры, он двигается медленнее.</li><br><li>До третьей ночи Фредди остается неподвижным, однако только пока у вас не закончилась электроэнергия (в этом случае, он придëт за вами, в офис, со стороны Западного коридора).</li><br></p></div>
 
 
+	</div>
+	</div>
+<!-- контейнер 2 <!-->
+	<div class="container2">
+	<img src="boddy.jpg" class="bonny">
+	<p>BONNY</p>
+	<div class="infa"><p><br><li>Классический Бонни является восстановленной версией Сломанной модели, хранившейся в старой пиццерии, и представляет из себя антропоморфного кролика грязно-сиреневого окраса. Он обладает достаточно плотным телосложением и средним ростом. Корпус Бонни сделан из плюша, который, однако, не полностью закрывает эндоскелет, из-за чего тот может быть виден в щелях между частями костюма (например, на руках и ушах). </li><br><li>Бонни имеет толстые конечности с плотно прилегающими накладками на плечах и коленях. У него большие цельные ладони. Как и у других Классических аниматроников, на руках Бонни всего по 4 пальца, а на ногах — 3. Туловище кролика напоминает по форме грушу с внушительным круглым животом светло-сиреневого цвета со светлым пятном. </li><br><li>У Бонни большая круглая голова без шеи. На макушке есть длинные кроличьи уши, разделённые на 2 сегмента, которыми аниматроник может двигать как вперёд, так и в стороны. У него крупная морда с блестящим овальным носом чёрного цвета и рядом белых прямоугольных зубов на нижней челюсти. Подобно большинству аниматроников Классической линейки, за первым рядом зубов можно увидеть второй, малый, состоящий из плоских зубов эндоскелета. Бонни имеет большие малиновые глаза, окружённые стальными веками. В отличие от других персонажей ресторана, Бонни не имеет бровей. </li><br><li>Подобно большинству своих версий, Бонни из аксессуаров носит красный галстук-бабочку, а в качестве реквизита в руках держит электрогитару. До изменений официального дизайна Бонни носил гитару с корпусом типа «Flying V» в форме стрелы, однако такой инструмент более не является каноническим элементом его образа. На данный момент он пользуется чёрно-белой электрогитарой с красным корпусом в форме трапеции. </li><br></p></div>
 
 
+	</div>
+	</div>
 
 
+<div class="container3">
+	<img src="foxy.jpg" class="foxy">
+	<p>FOXY</p>
+	<div class="infa"><p><br><li>В отличие от других аниматроников, Фокси прячется за занавесом в Пиратской бухте. Он будет оставаться скрытым до некоторого времени в зависимости от действий игрока и его тактики. Фокси ускоряется, если игрок не смотрит на камеры. Отличие Фокси от других аниматроников в том, что его путь заранее запланирован. Он появляется в Пиратской бухте за занавеской, после чего бежит по Западному коридору в офис.</li><br><li>Фокси прячется за занавеской в Пиратской бухте на протяжении всей игры. Игрок должен регулярно смотреть на камеры чтобы не спровоцировать переход Фокси в следующую фазу. Если установить ИИ Фокси на 20 в своей ночи и не проверять Пиратскую бухту, то он всегда прибежит на 20-22 секунде. Также он наиболее активен в мобильной версии. У него есть следующие фазы:
+<br>
+    1.Он прячется в Пиратской бухте за занавесом.<br>
+    2.Занавес раздвинут, позволяя игроку увидеть половину морды Фокси.<br>
+    3.Он вышел из занавеса и стоит перед камерой в темноте. Видны только его яркие глаза и крюк.<br>
+    4.Он атакует, если занавес полностью открыт, и Фокси не видно. Также иногда надпись на табличке «Извините! Вышел из строя» может замениться надписью «Это я». После того, как Фокси пропал, немедленно следует закрыть левую дверь, чтобы не умереть. Если посмотреть в Западный коридор, то можно увидеть, как Фокси бежит к офису. Если не закрыть дверь, Фокси нападёт на игрока.<br>
+    5.После того, как его атака была отражена, он возвращается в первоначальную фазу. Также, когда Фокси прибежит, будет потеряно немного энергии у батареи. Если же дверь будет открыта, то он забежит в офис и убьёт игрока.</li><br><li>Каждый раз после своего нападения Фокси забирает немного энергии. В первое нападение он забирает 1%, во второе — 5%, в третье он забирает 11% энергии, каждое следующее нападение забирает на 5% больше.</li><br></p></div>
 
 
+	</div>
+	</div>
 
-     	<label>
-	<input type="checkbox" name=""  id="btn-toggle" >
-	<span>
-		<i><ion-icon name="bulb-outline"></ion-icon></i>
-	</span>
-</label>
-
-     
-
-   <!--
+	<div class="container4">
+	<img src="chicka.jpg" class="freddy">
+	<p>CHIKA</p>
+	<div class="infa"><p><br><li>Ночью вместе с другими аниматрониками она будет пытаться засунуть игрока в костюм Фредди, считая, что как «голому» эндоскелету, по правилам пиццерии, нужно его одеть в костюм. Как Бонни и Фредди, Чика начинает ночь на Концертной сцене. Когда она покидает сцену, она может пойти на Кухню, в Обеденный зал и Восточный коридор (ходит по траектории Фредди, т.е. двигается по правой части здания). Как и у Бонни, чем ближе к офису, тем безумнее у Чики становится внешность. Её челюсть открывается шире, а на четвёртой ночи она и вовсе начинает проявлять странную активность, а именно дёргаться и издавать жуткое роботизированное бормотание в Углу восточного коридора. Она — единственный аниматроник, который будет иметь доступ к Кухне во время первых двух ночей. Будет слышен шум кастрюль и сковородок (возможно, она перебирается через них). Чика появляется у двери реже, но может оставаться там дольше, заставляя игрока тратить больше энергии. </li><li>Как и другие аниматроники, она становится более агрессивной с каждой ночью, также уменьшается время, за которое игрок должен успеть закрыть дверь. </li>
+		<li>На своей ночи на сложностях 13-20 Чика чаще всего перемещается в районе Восточного коридора, изредка выходя в Обеденный зал, на Кухню и в Туалеты. </li><br></p></div>
 
 
-<!-->
-   </ul></div>
-  </nav>
-</header>
-  <script src="theme.js"></script>
+	</div>
+	</div>
+
+<script type="text/javascript">
+
+</script>
 </body>
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>

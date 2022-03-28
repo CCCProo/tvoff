@@ -1,0 +1,481 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+:root{
+	--body:#e3dfdf;
+}
+body{
+	display: flex;
+	background: var(--body);
+}
+.navigator{
+	width: 100%;
+	height: 80px;
+	position: relative;
+	background: white;
+	display: flex;
+	justify-content: center;
+}
+.navigator ul{
+	display: flex;
+	width: 100%;
+}
+
+.navigator ul  li{
+	position: relative;
+	list-style: none;
+	width: 70px;
+	height: 70px;
+	z-index: 1;
+}
+.navigator ul  li a{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	font-weight: bold;
+}
+
+.navigator ul  li a .icon{
+	position: relative;
+	display: block;
+	font-size: 2em;
+	text-align: center;
+	color: black;
+	transition: 0.5s;
+	transform: translateY(20px);
+}
+.navigator ul  li a .icon1{
+	position: relative;
+	display: block;
+	font-size: 2em;
+	text-align: center;
+	color: black;
+	transition: 0.5s;
+}
+.active a .icon{
+	transform: translateY(50px);
+}
+
+.active a .icon1{
+	transform: translateY(50px);
+}
+
+.navigator ul  li a .text2{
+	position: absolute;
+	color: black;
+	font-weight: 400;
+	font-size: 1.1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	opacity: 0;
+	transform: translateY(40px);
+}
+.navigator ul  li:hover a .text2{
+	opacity: 1;
+}
+
+.navigator ul  li a .text{
+	position: absolute;
+	color: black;
+	font-weight: 400;
+	font-size: 1.1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	left: 3px;
+}
+
+
+.indicator{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background: #29fd53;
+	top: 31px;
+	left: 1px;
+	border-radius: 10000px;
+	border: 6px solid white;
+	transition: 0.5s; 
+}
+
+.container{
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 4%;
+	position: absolute;
+	top: 650px;
+	background: white;
+	left: -0;
+}
+
+.container2{
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 4%;
+	position: absolute;
+	top: 1150px;
+	background: white;
+	left: -0;
+}.container3{
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 4%;
+	position: absolute;
+	top: 1650px;
+	background: white;
+	left: -0;
+}
+
+.container4{
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 4%;
+	position: absolute;
+	top: 1650px;
+	background: white;
+	left: -0;
+}
+.container .freddy{
+	
+	width: 210.4px;
+	position: absolute;
+	top: 20px;
+}
+.container4 .freddy{
+	
+	width: 210.4px;
+	position: absolute;
+	top: 20px;
+}.container2 .bonny{
+	
+	width: 250.4px;
+	position: absolute;
+	top: 70px;
+}.container3 .foxy{
+	
+	width: 220.4px;
+	position: absolute;
+	top: 70px;
+}
+
+.container .freddyvr{
+	
+	width: 310.4px;
+	position: absolute;
+	top: 30px;
+	right: 0%;
+	margin-left: 0px;
+}
+
+
+.container p{
+	color: black;
+	font-size: 40px;
+	margin: 0 auto;
+	text-align: center;
+	top: 0px;
+	position: relative;	
+}.container2 p{
+	color: black;
+	font-size: 40px;
+	margin: 0 auto;
+	text-align: center;
+	top: 0px;
+	position: relative;	
+}.container3 p{
+	color: black;
+	font-size: 40px;
+	margin: 0 auto;
+	text-align: center;
+	top: 0px;
+	position: relative;	
+}.container4 p{
+	color: black;
+	font-size: 40px;
+	margin: 0 auto;
+	text-align: center;
+	top: 0px;
+	position: relative;	
+}
+
+.infa{
+	width: 70%;
+	height: 300px;
+	background: #eaeaea;
+	margin-left: 15%;
+	border-radius: 30px;
+	overflow-x: scroll;
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+
+.infa li{
+	font-size: 20px;
+	text-align: center;
+	transition: 0.2s;
+
+
+}
+
+.infa li:hover{
+	background: black;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	list-style: none;
+}
+@media screen and (max-width: 1110px){
+	.container2 .bonny{
+	
+	width: 230.4px;
+	position: absolute;
+	top: 70px;
+}
+
+}@media screen and (max-width: 1030px){
+	.container2 .bonny{
+	
+	width: 210.4px;
+	position: absolute;
+	top: 70px;
+}
+
+}
+@media screen and (max-width: 900px){
+	.container2 .bonny{
+	
+	width: 190.4px;
+	position: absolute;
+	top: 70px;
+}
+
+}@media screen and (max-width: 850px){
+	.container2 .bonny{
+	
+	width: 170.4px;
+	position: absolute;
+	top: 100px;
+}
+
+}@media screen and (max-width: 700px){
+	.container2 .bonny{
+	
+	width: 150.4px;
+	position: absolute;
+	top: 110px;
+}
+
+}
+
+@media screen and (max-width: 620px){
+	.container2 .bonny{
+	
+	width: 140.4px;
+	position: absolute;
+	top: 110px;
+}
+
+}
+
+@media screen and (max-width: 550px){
+	.container2 .bonny{
+	
+	width: 120.4px;
+	position: absolute;
+	top: 130px;
+}
+
+}
+
+@media screen and (max-width: 390px){
+	.container2 .bonny{
+	
+	width: 90.4px;
+	position: absolute;
+	top: 130px;
+}
+
+}
+@media screen and (max-width: 1100px){
+	.container3 .foxy{
+	
+	width: 200.4px;
+
+	top: 70px;
+}
+}
+
+@media screen and (max-width: 1050px){
+	.container3 .foxy{
+	
+	width: 190.4px;
+
+	top: 70px;
+}
+}
+
+@media screen and (max-width: 975px){
+	.container3 .foxy{
+	
+	width: 180.4px;
+
+	top: 70px;
+}
+}
+@media screen and (max-width: 865px){
+	.container3 .foxy{
+	
+	width: 160.4px;
+
+	top: 100px;
+}
+}@media screen and (max-width: 745px){
+	.container3 .foxy{
+	
+	width: 150.4px;
+
+	top: 110px;
+}
+}
+
+@media screen and (max-width: 675px){
+	.container3 .foxy{
+	
+	width: 130.4px;
+
+	top: 110px;
+}
+}
+
+@media screen and (max-width: 525px){
+	.container3 .foxy{
+	
+	width: 110.4px;
+
+	top: 130px;
+}
+}
+
+@media screen and (max-width: 370px){
+	.container3 .foxy{
+	
+	width: 100.4px;
+
+	top: 160px;
+}
+}.indicator2{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background: #29fd53;
+	top: 31px;
+	left: 70px;
+	border-radius: 10000px;
+	border: 6px solid white;
+	transition: 0.5s; 
+}
+
+.footer{
+	position: absolute;
+	left: 0;
+	top: 100px;
+}
+
+.footer img{
+
+	position: absolute;
+}
+header{
+
+	width:100%;
+	position: absolute;
+	top: 90px;
+	margin-top: -10px;
+	padding-top: 600px;
+	background-image: url(https://www.nationhive.com/sites/www.nationhive.com/files/styles/game_landing/public/games/highlight/five-nights-at-freddys-special-delivery.jpg?itok=2crOyN73);
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.shine-button {
+ text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px black inset, 0 0 0 0 black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: .15s ease-in-out;
+  background: white;
+  margin-top: 50px;
+}
+.shine-button:before {
+  content: "";
+  background: black;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.shine-button:hover {
+box-shadow: 0 0 10px 0 white inset, 0 0 10px 4px black;
+  color: black;
+}
+
+.infa2{
+	width: 70%;
+	background: #eaeaea;
+	margin-left: 15%;
+	border-radius: 30px;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+
+}@media screen and (max-width: 1100px) {
+			.container4 .freddy{
+	
+	width: 180.4px;
+	top: 40px;
+}
+		}
+
+		@media screen and (max-width: 980px) {
+			.container4 .freddy{
+	
+	width: 160.4px;
+	top: 60px;
+}
+		}
+	@media screen and (max-width: 670px) {
+			.container4 .freddy{
+	
+	width: 120.4px;
+	top: 100px;
+}
+		}
+
+			@media screen and (max-width: 570px) {
+			.container4 .freddy{
+	
+	width: 115.4px;
+	top: 110px;
+}			
+
+@media screen and (max-width: 500px) {
+			.container4 .freddy{
+	
+	width: 100.4px;
+	top: 110px;
+}

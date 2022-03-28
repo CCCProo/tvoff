@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FNAF</title>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+:root{
+	--body:#e3dfdf;
+}
+body{
+	display: flex;
+	background: var(--body);
+}
+.navigator{
+	width: 100%;
+	height: 80px;
+	position: relative;
+	background: white;
+	display: flex;
+	justify-content: center;
+}
+.navigator ul{
+	display: flex;
+	width: 100%;
+}
+
+.navigator ul  li{
+	position: relative;
+	list-style: none;
+	width: 70px;
+	height: 70px;
+	z-index: 1;
+}
+.navigator ul  li a{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	font-weight: bold;
+}
+
+.navigator ul  li a .icon{
+	position: relative;
+	display: block;
+	font-size: 2em;
+	text-align: center;
+	color: black;
+	transition: 0.5s;
+	transform: translateY(20px);
+}
+.navigator ul  li a .icon1{
+	position: relative;
+	display: block;
+	font-size: 2em;
+	text-align: center;
+	color: black;
+	transition: 0.5s;
+}
+.active a .icon{
+	transform: translateY(50px);
+}
+
+.active a .icon1{
+	transform: translateY(50px);
+}
+
+.navigator ul  li a .text2{
+	position: absolute;
+	color: black;
+	font-weight: 400;
+	font-size: 1.1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	opacity: 0;
+	transform: translateY(40px);
+}
+
+.navigator ul  li a .text{
+	position: absolute;
+	color: black;
+	font-weight: 400;
+	font-size: 1.1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	left: 3px;
+}
+
+
+.indicator{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background: #29fd53;
+	top: 31px;
+	left: 1px;
+	border-radius: 10000px;
+	border: 6px solid white;
+	transition: 0.5s; 
+}
+
+		.navigator ul  li a .text2{
+	position: absolute;
+	color: black;
+	font-weight: 400;
+	font-size: 1.1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	opacity: 1;
+	transform: translateY(40px);
+}
+.navigator ul  li a .text{
+	position: absolute;
+	color: black;
+	font-weight: 400;
+	font-size: 1.1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	opacity: 1;
+	transform: translateY(40px);
+
+}
+.indicator{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background: #29fd53;
+	top: 31px;
+	left: 1px;
+	border-radius: 10000px;
+	border: 6px solid white;
+	transition: 0.5s; 
+	opacity: 0;
+	
+
+}
+.active a .icon{
+	transform: translateY(0px);
+	
+
+}header{
+
+	width:100%;
+	position: absolute;
+	top: 90px;
+	margin-top: -10px;
+	padding-top: 600px;
+	background-image: url(https://www.nationhive.com/sites/www.nationhive.com/files/styles/game_landing/public/games/highlight/five-nights-at-freddys-special-delivery.jpg?itok=2crOyN73);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	
+}
+header p{
+	font-size: 100px;
+	font-weight: bold;
+	color: white;
+	 text-shadow:0 4px 0 #ffffffa3, 4px 0 0 #ffffffa3,
+    0 8px 0  #b0a4a4a3, 8px 0 0 #b0a4a4a3;
+    margin-top: -400px;
+    animation: os 3s  linear infinite;
+    transition: 1s;
+}
+
+
+@keyframes os {
+	0%{
+
+
+
+	}
+	50%{
+		text-shadow: 0 4px 0 #2d2828a3, 4px 0 0 #0009, 0 8px 0 #b0a4a4a3, 8px 0 0 #6f6868;
+		color: black;
+	}
+	100%{
+
+	}
+}
+
+header .span{
+	padding: 50px;
+	color: red;
+	margin-left: 10px;
+	position: absolute;
+	font-size: 70px;
+	animation: opa 2s linear infinite;
+
+}header .span2{
+	padding: 50px;
+	color: red;
+	margin-left: -180px;
+	font-size: 70px;
+	position: absolute;
+	animation: opa 2s linear infinite;
+
+}
+
+
+
+header .span3{
+	padding: 50px;
+	color: red;
+	margin-top: -280px;
+	font-size: 70px;
+	margin-left: 10px;
+	position: absolute;
+	animation: opa 2s linear infinite;
+
+}header .span4{
+	padding: 50px;
+	color: red;
+	margin-top: -280px;
+	margin-left: -180px;
+	position: absolute;
+	font-size: 70px;
+	animation: opa 2s linear infinite;
+
+}
+@keyframes opa {
+	0%{
+		
+
+	}
+	50%{
+		color: black;
+		opacity: 0.4;
+	}
+	100%{
+
+	}
+}
+	</style>	<header><p>404</p><ion-icon class="span" name="close-circle-outline"></ion-icon><ion-icon class="span2" name="close-circle-outline"></ion-icon><ion-icon class="span3" name="close-circle-outline"></ion-icon><ion-icon class="span4" name="close-circle-outline"></ion-icon></header>
+	<div class="navigator">
+		<ul>
+			<li class="list active">
+				<a href="index.html">
+					<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+					<span class="text">Главная</span>
+				</a>
+			</li>
+			<li>
+				<a href="dowloandfnaf.html">
+					<span class="icon"><ion-icon name="cloud-download-outline"></ion-icon></span>
+					<span class="text2">Скачать</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>
